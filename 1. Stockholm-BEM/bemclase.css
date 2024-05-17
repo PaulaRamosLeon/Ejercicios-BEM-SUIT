@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Header {
+    padding: 30px;
+    
+}
+.header__ul {
+    list-style-type: none;
+    
+   
+}
+.Contenido {
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+
+}
+
+.Galeria {
+    /*GRID*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+}
+
+
+.Galeria-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Caja de 2 filas*/
+.Galeria-img--2f {
+    grid-row: span 2;
+}
+
+/*Caja de 2 columnas*/
+.Galeria-img--2c {
+    grid-column: span 2;
+}
+
+/*Caja de 4x4*/
+.Galeria-img--4 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.Footer {
+    margin: 30px;
+}
