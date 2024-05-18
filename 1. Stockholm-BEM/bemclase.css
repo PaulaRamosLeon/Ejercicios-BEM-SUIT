@@ -4,10 +4,11 @@
     box-sizing: border-box;
     }
 
-.Header {
+.header {
     padding: 30px;
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 .header__ul, .footer__ul {
     list-style-type: none;
@@ -28,14 +29,19 @@
     margin: 0px 15px;
 }
 
-.Contenido {
+.fa-bars {
+    position: absolute;
+    right: 150px;
+    font-size: 20px;
+}
+.contenido {
     
     width: 90vw;
     margin: auto;
     
 }
 
-.Galeria {
+.contenido__galeria {
     /*GRID*/
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -44,24 +50,24 @@
 }
 
 
-.Galeria-img {
+.galeria-img {
     width: 100%;
     height: 100%;
 }
 
 
 /*Caja de 2 filas*/
-.Galeria-img--2f {
+.galeria-img--2f {
     grid-row: span 2;
 }
 
 /*Caja de 2 columnas*/
-.Galeria-img--2c {
+.galeria-img--2c {
     grid-column: span 2;
 }
 
 /*Caja de 4x4*/
-.Galeria-img--4 {
+.galeria-img--4 {
     grid-row: span 2;
     grid-column: span 2;
 }
@@ -87,5 +93,6 @@
 }
 
 .IconBox-span {
-    font-size: 2em;
+    font-size: 20px;
+    color: black;
 }
